@@ -18,13 +18,20 @@ a{
   font-size: 13px;
   color: #404040;
 }
+a:hover{
+  text-decoration: underline;
+}
 
 nav{
   width: 100%;
   display:inline-block;
   text-align: right;
+  margin-top: 20px;
 }
 
+nav ul{
+  margin-right: 20px;
+}
 nav ul li{
   margin-right: 10px;
   padding-bottom: 20px;
@@ -34,15 +41,27 @@ nav ul li{
 section{
   width: 100%;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 130px;
 }
 
 .search-bar{
-  width: 586px;
+  width: 556px;
   height: 35px;
+  padding: 2px 10px;
   margin-top: 27px;
   margin-bottom: 27px;
-  /*border: 1px solid #4D90FE;*/
+  background-image: url('../images/mic.png');
+  background-position: 548px 10px;
+  background-repeat: no-repeat;
+  border: 1px solid #D9D9D9;
+}
+.search-bar:focus {
+  outline:none;
+  border: 1px solid #4D90FE;
+}
+
+.button{
+  margin-right: 5px;
 }
 
 #container {
@@ -74,4 +93,8 @@ footer ul{
 
 footer li{
   padding-right: 20px;
+}
+
+footer li a{
+  color: #666;
 }
