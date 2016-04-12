@@ -4,3 +4,14 @@
    we get 3, 5, 6 and 9. The sum of these multiples is 23.
    # Find the sum of all the multiples of 3 or 5 below 1000. #
 */
+console.log("Problem 1 - Multiples of 3 and 5")
+
+var sum = 0;
+for (var i = 0; i < 10; i++) {
+  if(i % 5 === 0 || i % 3 === 0){
+    sum += i;
+  }
+}
+
+console.log("The sum is " + sum);
+console.log("");
