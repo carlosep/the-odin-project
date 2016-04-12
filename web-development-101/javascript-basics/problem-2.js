@@ -7,3 +7,18 @@
   # By considering the terms in the Fibonacci sequence whose values do not
   exceed four million, find the sum of the even-valued terms. #
 */
+
+var array = [1,2];
+var sum = 2;
+
+while (array[array.length-1] < 4000000) {
+  temp = array[array.length-1] + array[array.length-2];
+  array.push(temp)
+  if (temp % 2 === 0){
+    sum += temp;
+  }
+}
+
+console.log("Problem 2 - Even Fibonacci numbers")
+console.log("The sum is " + sum);
+console.log("");
